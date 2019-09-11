@@ -7,7 +7,7 @@ Created On:
 Last Modified:
 */
 // Vendors and external stylesheets
-@import "vendors/bootstrap";
+// @import "vendors/bootstrap";
 @import "vendors/font-awesome";
 
 // Sass utilities
@@ -30,7 +30,8 @@ Last Modified:
 @import "components/buttons";
 
 // Page-specific stylesheets
-@import "pages/home";
+@import "pages/splash";
+@import "pages/welcome";
 
 // Themes
 @import "themes/theme";

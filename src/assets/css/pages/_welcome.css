@@ -1,0 +1,34 @@
+app-welcome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("./images/welcome-back-img.png"); }
+  app-welcome ion-grid {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    app-welcome ion-grid ion-col {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      app-welcome ion-grid ion-col svg {
+        display: block;
+        width: 95%;
+        height: 95%;
+        max-width: 300px;
+        max-height: 115px; }
