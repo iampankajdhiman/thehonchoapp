@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('../fonts/proxima-nova-bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima-nova-bold.woff') format('woff'), url('../fonts/proxima-nova-bold.ttf')  format('truetype'), url('../fonts/proxima-nova-bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('../fonts/proxima-nova-light.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima-nova-light.woff') format('woff'), url('../fonts/proxima-nova-light.ttf')  format('truetype'), url('../fonts/proxima-nova-light.svg#ProximaNova-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('../fonts/proxima-nova-regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima-nova-regular.woff') format('woff'), url('../fonts/proxima-nova-regular.ttf')  format('truetype'), url('../fonts/proxima-nova-regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('../fonts/proxima-nova-semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/proxima-nova-semibold.woff') format('woff'), url('../fonts/proxima-nova-semibold.ttf')  format('truetype'), url('../fonts/proxima-nova-semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    font-family: $sans-serif;
+    font-weight: normal;
+    line-height: 1.7;
+    font-size: $base-font-size + px;
+    color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 0 25px;
+}
+
+
+h1 {
+    font-size: em(45);
+    @include breakpoint(desktop){
+        font-size: em(38);
+    }
+}
+
+h2 {
+    font-size: em(40);
+    @include breakpoint(desktop){
+        font-size: em(36);
+    }
+}
+
+h3 {
+    font-size: em(34);
+    @include breakpoint(desktop){
+        font-size: em(28);
+    }
+}
+
+h4 {
+    font-size: em(28);
+    @include breakpoint(desktop){
+        font-size: em(26);
+    }
+}
+
+h5 {
+    font-size: em(22);
+    @include breakpoint(desktop){
+        font-size: em(18);
+    }
+}
+
+h6 {
+    font-size: em(18);
+    @include breakpoint(desktop){
+        font-size: em(16);
+    }
+}
+
+p{
+    font-size: em(16);
+    font-family: $sans-serif;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: $color-text;
+    @include breakpoint(desktop){
+        margin-bottom: 30px;
+
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    a{
+        color: #000;
+        &:hover, &:focus{
+            color: $color-secondary;
+        }
+    }
+}
