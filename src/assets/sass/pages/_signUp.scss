@@ -1,0 +1,102 @@
+.auth-tabs-header {
+    @include bg-cover;
+    background-image: url('../images/sign-up-top-head-img.png');
+    background-position: top right;
+    background-size: 117px 74px;
+    padding-top: 53px;
+    text-align: center;
+    margin-bottom: 15px;
+
+    ion-segment {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    ion-segment-button,
+    button {
+        --background-checked: rgba(#fff, 0);
+        --color: #344900;
+        opacity: 0.50;
+        border: none;
+        display: inline-block;
+        font-size: 100%;
+        font-weight: normal;
+        font-family: $sans-serif-s;
+        margin: 0 15px;
+
+        &.segment-button-checked {
+            opacity: 1;
+        }
+
+    }
+}
+
+.auth-tabs-body {
+    text-align: center;
+
+    form {
+        background: #F4F4F4;
+        border-radius: 12px;
+        border: solid 1px #ebebeb;
+        width: 90%;
+        max-width: 380px;
+        margin: 0 auto 60px;
+        padding: 20px;
+
+        ion-list {
+            background: transparent;
+
+
+            ion-item {
+                --background: transparent;
+                --padding-start: 0;
+                margin-bottom: 20px;
+                --min-height: 1px;
+            }
+
+            ion-label.sc-ion-label-ios-h {
+                color: #344900;
+                font-size: 13px;
+
+                ion-icon {
+                    font-size: 15px;
+                    display: inline-block;
+                    vertical-align: -2px;
+                }
+            }
+
+            ion-input.sc-ion-input-ios-h{
+                --padding-top:0;
+                --padding-left:0;
+                --padding-bottom:0;
+                --padding-right:0;
+            }
+
+            ion-item:last-of-type{
+                margin-bottom: 0;
+            }
+
+        }
+
+        .form-btn{
+            margin-bottom: -42px;
+        }
+
+    }
+}
+
+.have-acc{
+    padding: 0 30px;
+    h3{
+        font-size: 140%;
+        font-family: $sans-serif-s;
+        color: $color-primary;
+        margin-bottom: 10px;
+        a{
+            color: $color-primary;
+        }
+    }
+    p{
+        font-size:100%;
+    }
+}

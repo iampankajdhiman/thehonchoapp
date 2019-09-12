@@ -12,10 +12,11 @@ import { AppHeaderComponent } from './layout/app-header/app-header-component';
 import { AppFooterComponent } from './layout/app-footer/app-footer-component';
 import { AppSplash } from './layout/splash/splash-component';
 import { AppWelcome } from './layout/welcome/welcome-component';
+import { AppSignUp } from './layout/user/signup/signup-component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome],
+  declarations: [AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome, AppSignUp],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
