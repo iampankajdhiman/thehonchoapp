@@ -16,6 +16,7 @@
     button {
         --background-checked: rgba(#fff, 0);
         --color: #344900;
+        color: #344900;
         opacity: 0.50;
         border: none;
         display: inline-block;
@@ -34,6 +35,10 @@
 .auth-tabs-body {
     text-align: center;
 
+    &.pt-5{
+        --padding-top: 15vh;
+    }
+
     form {
         background: #F4F4F4;
         border-radius: 12px;
@@ -45,6 +50,8 @@
 
         ion-list {
             background: transparent;
+            padding: 0;
+            margin: 0 0 25px;
 
 
             ion-item {
@@ -54,9 +61,17 @@
                 --min-height: 1px;
             }
 
-            ion-label.sc-ion-label-ios-h {
+            ion-label {
                 color: #344900;
-                font-size: 13px;
+
+                &.sc-ion-label-ios-h,
+                &.sc-ion-label-md-h {
+                    color: #344900;
+                    font-size: 13px;
+                    transform: none;
+                }
+
+
 
                 ion-icon {
                     font-size: 15px;
@@ -65,38 +80,87 @@
                 }
             }
 
-            ion-input.sc-ion-input-ios-h{
-                --padding-top:0;
-                --padding-left:0;
-                --padding-bottom:0;
-                --padding-right:0;
+            ion-input.sc-ion-input-ios-h {
+                --padding-top: 0;
+                --padding-left: 0;
+                --padding-bottom: 0;
+                --padding-right: 0;
             }
 
-            ion-item:last-of-type{
+            ion-item:last-of-type {
                 margin-bottom: 0;
             }
 
         }
 
-        .form-btn{
+        .form-btn {
             margin-bottom: -42px;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 100%;
+
+            a {
+                color: #344900;
+            }
+
+            &.text-right {
+                text-align: right;
+            }
+        }
+
+        ion-item+p {
+            margin-top: 5px;
         }
 
     }
 }
 
-.have-acc{
+.have-acc {
     padding: 0 30px;
-    h3{
+
+    h3 {
         font-size: 140%;
         font-family: $sans-serif-s;
         color: $color-primary;
         margin-bottom: 10px;
-        a{
+
+        a {
             color: $color-primary;
         }
     }
-    p{
-        font-size:100%;
+
+    p {
+        font-size: 90%;
+    }
+
+    .social-links {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        ion-button {
+            --background: rgba(#fff, 0);
+            --color: #344900;
+            color: #344900;
+            background: transparent;
+            width: 42px;
+            height: 42px;
+            opacity: 1;
+            border: solid 1px #344900;
+            display: inline-block;
+            font-size: 100%;
+            font-weight: normal;
+            font-family: $sans-serif-s;
+            margin: 0 10px;
+            border-radius: 100%;
+
+            button {
+                --background: rgba(#fff, 0);
+                --color: #344900;
+                color: #344900;
+                background: transparent;
+            }
+        }
     }
 }

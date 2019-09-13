@@ -1,0 +1,35 @@
+<ion-content class="auth-tabs-body pt-5">
+        <div class="text-center have-acc">
+                <h3>Forgot your password?</h3>
+                <p>Enter your email below to receive your<br/>Password reset instructions</p>
+                <figure>
+                    <img src="assets/images/forgot-password-img.jpg">
+                </figure>
+            </div>
+        <form mode="ios">
+                <ion-list mode="ios">
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="mail"></ion-icon> Email
+                        </ion-label>
+                        <ion-input formControlName="email" type="email" spellcheck="false" autocapitalize="off" required
+                            placeholder="lorem.ipsum@gmail.com">
+                        </ion-input>
+                    </ion-item>
+
+                </ion-list>
+
+                <ion-row class="form-btn">
+                    <ion-col>
+                        <ion-button type="submit" expand="block" mode="ios">SEND PASSWORD</ion-button>
+                    </ion-col>
+
+
+                </ion-row>
+            </form>
+
+            <div class="text-center have-acc">
+                    <p [routerLink]="['/sign-up']">Close</p>
+                </div>
+
+</ion-content>

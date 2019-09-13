@@ -4,6 +4,8 @@ import { AppLayoutComponent } from './layout/app-layout/app-layout-component';
 import { AppSplash } from './layout/splash/splash-component';
 import { AppWelcome } from './layout/welcome/welcome-component';
 import { AppSignUp } from './layout/user/signup/signup-component';
+import { AppForgot } from './layout/user/signup/forgotPass/forgot-component';
+import { AppHome } from './layout/user/home/home-component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -12,6 +14,8 @@ const routes: Routes = [
   { path: '', component: AppSplash, pathMatch: 'full' },
   { path: 'welcome', component: AppWelcome, pathMatch: 'full' },
   { path: 'sign-up', component: AppSignUp, pathMatch: 'full' },
+  { path: 'forgot-password', component: AppForgot, pathMatch: 'full' },
+  { path: 'home', component: AppHome, pathMatch: 'full' },
 ];
 
 @NgModule({

@@ -97,12 +97,9 @@ p{
     font-size: em(16);
     font-family: $sans-serif;
     line-height: 1.7;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     color: $color-text;
-    @include breakpoint(desktop){
-        margin-bottom: 30px;
 
-    }
 
     strong {
         font-weight: 700;
