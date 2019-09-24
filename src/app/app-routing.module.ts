@@ -6,6 +6,12 @@ import { AppWelcome } from './layout/welcome/welcome-component';
 import { AppSignUp } from './layout/user/signup/signup-component';
 import { AppForgot } from './layout/user/signup/forgotPass/forgot-component';
 import { AppHome } from './layout/user/home/home-component';
+import { AppAbout } from './layout/user/about/about-component';
+import { AppTermsConditions } from './layout/user/terms-conditions/terms-conditions-component';
+import { AppPrivacyPolicy } from './layout/user/privacy-policy/privacy-policy-component';
+import { AppChangePassword } from './layout/user/change-password/change-password-component';
+import { AppSettings } from './layout/user/settings/settings-component';
+import { AppProfile } from './layout/user/profile/profile-component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -16,6 +22,12 @@ const routes: Routes = [
   { path: 'sign-up', component: AppSignUp, pathMatch: 'full' },
   { path: 'forgot-password', component: AppForgot, pathMatch: 'full' },
   { path: 'home', component: AppHome, pathMatch: 'full' },
+  { path: 'about', component: AppAbout, pathMatch: 'full' },
+  { path: 'terms-and-conditions', component: AppTermsConditions, pathMatch: 'full' },
+  { path: 'privacy-policy', component: AppPrivacyPolicy, pathMatch: 'full' },
+  { path: 'change-password', component: AppChangePassword, pathMatch: 'full' },
+  { path: 'settings', component: AppSettings, pathMatch: 'full' },
+  { path: 'profile', component: AppProfile, pathMatch: 'full' },
 ];
 
 @NgModule({
