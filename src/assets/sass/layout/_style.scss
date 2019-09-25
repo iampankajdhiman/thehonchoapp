@@ -54,6 +54,14 @@ ion-content {
         }
     }
 
+
+
+
+
+
+}
+
+app-settings{
     ion-item {
         --padding-start: 0;
         padding: 10px;
@@ -72,21 +80,49 @@ ion-content {
 
         }
     }
-
-
-
 }
 
-app-profile {
-    .header-login ion-toolbar{
+
+app-profile,
+app-profile-edit {
+    .header-login ion-toolbar {
         top: 20px;
         transform: translateY(0%);
     }
+
     .header-login .profile-section {
         width: 90%;
         margin: 80px 0 -290px;
-        .profile-top ion-toolbar{
+
+        .profile-top ion-toolbar {
             position: static;
+        }
+    }
+
+    .header-login .profile-section .profile-edit-form form{
+        width: 100%;
+    }
+
+    .header-login .profile-section .profile-edit-form ion-item {
+        border-radius: 0px;
+        height: auto;
+        padding: 0px;
+        border: none;
+        border-bottom: solid 1px #cecdd2;
+        --background:transparent;
+    }
+
+    .header-login .profile-section .profile-edit-form .profile-form-btn {
+        margin-bottom: -42px;
+    }
+
+    .header-login .profile-section .profile-edit-form ion-item ion-label{
+        color: #344900;
+        font-size: 13px;
+        transform: none;
+        ion-icon{
+            display: inline-block;
+            vertical-align: -2px;
         }
     }
 }

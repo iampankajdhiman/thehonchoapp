@@ -12,6 +12,8 @@ import { AppPrivacyPolicy } from './layout/user/privacy-policy/privacy-policy-co
 import { AppChangePassword } from './layout/user/change-password/change-password-component';
 import { AppSettings } from './layout/user/settings/settings-component';
 import { AppProfile } from './layout/user/profile/profile-component';
+import { AppProfileEdit } from './layout/user/profile-edit/profile-edit-component';
+import { AppListing } from './layout/user/listing/listing-component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: 'change-password', component: AppChangePassword, pathMatch: 'full' },
   { path: 'settings', component: AppSettings, pathMatch: 'full' },
   { path: 'profile', component: AppProfile, pathMatch: 'full' },
+  { path: 'profile-edit', component: AppProfileEdit, pathMatch: 'full' },
+  { path: 'listing', component: AppListing, pathMatch: 'full' },
 ];
 
 @NgModule({

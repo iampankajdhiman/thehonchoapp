@@ -1,0 +1,77 @@
+<ion-header class="header-login" mode="ios">
+    <ion-toolbar>
+        <ion-icon name="ios-arrow-back"></ion-icon>
+    </ion-toolbar>
+    <ion-toolbar>
+        <ion-icon name="md-close"></ion-icon>
+    </ion-toolbar>
+
+    <div class="profile-section">
+        <div class="profile-top no-border">
+
+            <div class="profile-pic">
+                <figure style="background-image:url('assets/images/profile-img.png');"></figure>
+                <form mode="ios">
+                    <ion-list mode="ios">
+                        <ion-input type="file" accept="image/*" capture="camera" id="fileInput"></ion-input>
+                        <ion-label for="fileInput" icon-only ion-button>
+                            <ion-icon name="camera"></ion-icon>
+                        </ion-label>
+                    </ion-list>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="profile-edit-form">
+            <form mode="ios">
+                <ion-list mode="ios">
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="md-person"></ion-icon> Username
+                        </ion-label>
+                        <ion-input name="Username" type="text" required placeholder="Gabrial">
+                        </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="ios-call"></ion-icon> Contact
+                        </ion-label>
+                        <ion-input name="Contact" type="tel" required placeholder="+123 456 7890">
+                        </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="md-mail"></ion-icon> Email
+                        </ion-label>
+                        <ion-input name="Email" type="email" required placeholder="lorem.ipsum@gmail.com">
+                        </ion-input>
+                    </ion-item>
+
+                </ion-list>
+
+                <ion-row class="profile-form-btn">
+                    <ion-col>
+                        <ion-button type="submit" expand="block" mode="ios">UPDATE</ion-button>
+                    </ion-col>
+
+                </ion-row>
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+
+</ion-header>
+
+<ion-content>
+
+
+
+</ion-content>
