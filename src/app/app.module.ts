@@ -23,11 +23,13 @@ import { AppSettings } from './layout/user/settings/settings-component';
 import { AppProfile } from './layout/user/profile/profile-component';
 import { AppProfileEdit } from './layout/user/profile-edit/profile-edit-component';
 import { AppListing } from './layout/user/listing/listing-component';
+import { AppListingDetail } from './layout/user/listing-details/listing-detail-component';
 import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome, AppSignUp, AppForgot, AppHome, AppAbout, AppTermsConditions, AppPrivacyPolicy, AppChangePassword, AppSettings, AppProfile, AppProfileEdit, AppListing
+    AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome, AppSignUp, AppForgot, AppHome, AppAbout, AppTermsConditions, AppPrivacyPolicy, AppChangePassword, AppSettings, AppProfile, AppProfileEdit, AppListing, AppListingDetail
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
