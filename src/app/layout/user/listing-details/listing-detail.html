@@ -1,27 +1,11 @@
 <ion-header class="header-login" mode="ios">
     <ion-toolbar>
-        <ion-icon name="person"></ion-icon>
+        <ion-icon name="ios-arrow-back"></ion-icon>
     </ion-toolbar>
 
-    <form mode="ios">
-        <ion-list mode="ios">
-            <ion-item>
-                <ion-input formControlName="search" type="text" placeholder="Search">
-                </ion-input>
-            </ion-item>
-        </ion-list>
-
-        <ion-row class="form-btn">
-            <ion-col>
-                <ion-button type="submit" expand="block" mode="ios">
-                    <ion-icon name="search"></ion-icon>
-                </ion-button>
-            </ion-col>
-        </ion-row>
-    </form>
-
+    <h1>White Horse Bar and Grill</h1>
     <ion-toolbar>
-        <ion-icon name="ios-funnel"></ion-icon>
+
     </ion-toolbar>
 </ion-header>
 
@@ -29,25 +13,117 @@
 
     <ion-list>
         <ion-list-header>
-            <ion-img src="assets/images/listing-img.jpg"></ion-img>
+            <ion-img src="assets/images/listing-inner-img.jpg"></ion-img>
             <ion-label>
                 <h6>321 Main Street Boise, Texas <small>0.2 miles away</small></h6>
                 <cite>115 Subscribers</cite>
             </ion-label>
         </ion-list-header>
-        <div class="deals-heading">
+        <div class="text-center">
+            <div class="deals-heading">
                 Head Honcho! Deal 3 of 47 Live Deals
+            </div>
         </div>
         <ion-item>
-            <h2>1 Mug of Draught Beer (500ml) <small>$1.00</small></h2>
-            <p>Valid on: <strong>Today</strong></p>
-            <p>Live at: <strong>09:00 PM</strong></p>
+            <ion-label>
+                <h2>1 Mug of Draught Beer (500ml) <small>$1.00</small></h2>
+                <p>Valid on: <strong>Today</strong></p>
+                <p>Live at: <strong>09:00 PM</strong></p>
 
-            <div class="detail-footer">
-                <a href="#" >Plan To Attend</a>
-                <ion-button >CHECK IN</ion-button>
-            </div>
+                <div class="detail-footer">
+                    <a href="#">Plan To Attend</a>
+                    <ion-button>CHECK IN</ion-button>
+                </div>
+            </ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>
+                <h2>2 Beer Mugs(500Ml) + 1 Veg/Non-Veg Starter <small>$5.00</small></h2>
+                <p>Valid on: <strong>Today</strong></p>
+                <p>Live at: <strong>08:00 PM</strong></p>
+                <div class="timer">
+                    01:30:48
+                </div>
+
+                <div class="detail-footer">
+                    <a href="#">Plan To Attend</a>
+                    <ion-button>CHECK IN</ion-button>
+                </div>
+            </ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>
+                <h2>Bazooka Or Tower (3000ml) + 2 Veg / Non-Veg Starter <small>$17.50</small></h2>
+                <p>Valid on: <strong>Today</strong></p>
+                <p>Live at: <strong>10:00 PM</strong></p>
+
+                <div class="detail-footer">
+                    <a href="#">Plan To Attend</a>
+                    <ion-button>CHECK IN</ion-button>
+                </div>
+            </ion-label>
         </ion-item>
     </ion-list>
+
+    <ion-text class="links-cloud">
+        <p>
+            Links:
+            <a href="#">Drinks Menu</a>
+            <a href="#">Food Menu</a>
+            <a href="#">Establishment Photos</a>
+        </p>
+    </ion-text>
+
+    <ion-toolbar>
+        <ion-header>Open  Hours</ion-header>
+        <ion-text>
+            <p>
+                <strong>Sunday:</strong>
+                <strong>Closed</strong>
+            </p>
+            <p>
+                <strong>Monday:</strong>
+                <strong>09:00AM - 07:00PM</strong>
+            </p>
+            <p>
+                <strong>Tuesday:</strong>
+                <strong>09:00AM - 07:00PM</strong>
+            </p>
+            <p>
+                <strong>Wednesday:</strong>
+                <strong>09:00AM - 07:00PM</strong>
+            </p>
+            <p>
+                <strong>Thrusday:</strong>
+                <strong>09:00AM - 07:00PM</strong>
+            </p>
+            <p>
+                <strong>Friday:</strong>
+                <strong>09:00AM - 07:00PM</strong>
+            </p>
+            <p>
+                <strong>Saturday:</strong>
+                <strong>09:00AM - 07:00PM</strong>
+            </p>
+        </ion-text>
+    </ion-toolbar>
+
+    <ion-text class="text-center">
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injec ted humour, or randomised words which don't look even slightly believable. If you are
+            going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.
+        </p>
+    </ion-text>
+
+    <ion-card class="listing-subscribe">
+        <ion-card-content>
+            <ion-label>To receive live and future deals from Whitehorse Bar and Grill</ion-label>
+            <ion-button color="danger" slot="end">SUBSCRIBE</ion-button>
+        </ion-card-content>
+
+    </ion-card>
+
 
 </ion-content>
