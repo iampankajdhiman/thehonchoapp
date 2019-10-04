@@ -1,0 +1,131 @@
+<ion-header class="auth-tabs-header" mode="ios">
+    <ion-segment [value]="status" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="Login" mode="ios">
+            <ion-label>Login</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Register" mode="ios">
+            <ion-label>Register</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+</ion-header>
+<ion-content class="auth-tabs-body">
+    <div [ngSwitch]="status">
+        <div *ngSwitchCase="'Login'">
+            <form mode="ios">
+                <ion-list mode="ios">
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="mail"></ion-icon> Email
+                        </ion-label>
+                        <ion-input formControlName="email" type="email" spellcheck="false" autocapitalize="off" required
+                            placeholder="lorem.ipsum@gmail.com">
+                        </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="lock"></ion-icon> Password
+                        </ion-label>
+                        <ion-input name="password" type="password" formControlName="password" required
+                            placeholder="qwerty54#">
+                        </ion-input>
+                    </ion-item>
+                    <p class="text-right">
+                        <a [routerLink]="['/restaurant-forgot-password']" routerDirection="forward">Forgot Password</a>
+                    </p>
+                </ion-list>
+
+                <ion-row class="form-btn">
+                    <ion-col>
+                        <ion-button type="submit" expand="block" mode="ios">SIGN IN</ion-button>
+                    </ion-col>
+
+
+                </ion-row>
+            </form>
+            <div class="text-center have-acc">
+                <p>or login with</p>
+                <ion-buttons mode="ios" class="social-links">
+                        <ion-button (click)="facebookLogin()" mode="ios">
+                                <ion-icon  name="logo-facebook"></ion-icon>
+                            </ion-button>
+                    <ion-button (click)="googleLogin()" mode="ios">
+                        <ion-icon name="logo-googleplus"></ion-icon>
+                    </ion-button>
+
+                </ion-buttons>
+                <h3><a href="#">Don’t have an account ?</a></h3>
+            </div>
+        </div>
+        <div *ngSwitchCase="'Register'">
+
+            <form>
+                <ion-list>
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="person"></ion-icon> Username
+                        </ion-label>
+                        <ion-input formControlName="text" type="text" spellcheck="false" autocapitalize="off" required
+                            placeholder="5GKFU4185">
+                        </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="call"></ion-icon> Contact
+                        </ion-label>
+                        <ion-input name="contact" type="tel" formControlName="contact" required
+                            placeholder="+123 456 7890">
+                        </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="mail"></ion-icon> Email
+                        </ion-label>
+                        <ion-input name="email" type="email" formControlName="email" required
+                            placeholder="lorem.ipsum@gmail.com">
+                        </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="lock"></ion-icon> Password
+                        </ion-label>
+                        <ion-input name="password" type="password" formControlName="password" required
+                            placeholder="lwerty54#">
+                        </ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked" color="primary">
+                            <ion-icon name="lock"></ion-icon> Conﬁrm Password
+                        </ion-label>
+                        <ion-input name="password" type="password" formControlName="password" required
+                            placeholder="lwerty54#">
+                        </ion-input>
+                    </ion-item>
+                </ion-list>
+
+                <ion-row class="form-btn">
+                    <ion-col>
+                        <ion-button type="submit" expand="block" mode="ios" color="secondary" >SIGN UP</ion-button>
+                    </ion-col>
+                </ion-row>
+            </form>
+
+            <div class="text-center have-acc">
+                <h3><a href="#">Already have an account ?</a></h3>
+
+                <p>By Signing up you are agreeing to the <a href="#">Terms and Conditions</a> and the <a
+                        href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</ion-content>

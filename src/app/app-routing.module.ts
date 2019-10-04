@@ -16,6 +16,12 @@ import { AppProfileEdit } from './layout/user/profile-edit/profile-edit-componen
 import { AppListing } from './layout/user/listing/listing-component';
 import { AppListingDetail } from './layout/user/listing-details/listing-detail-component';
 
+import { AppResSignUp } from './layout/restaurant/signup/signup-component';
+import { AppResForgot } from './layout/restaurant/signup/forgotPass/forgot-component';
+import { AppResAbout } from './layout/restaurant/about/about-component';
+import { AppResPrivacyPolicy } from './layout/restaurant/privacy-policy/privacy-policy-component';
+import { AppResTermsConditions } from './layout/restaurant/terms-conditions/terms-conditions-component';
+
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
   // { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
@@ -34,6 +40,12 @@ const routes: Routes = [
   { path: 'profile-edit', component: AppProfileEdit, pathMatch: 'full' },
   { path: 'listing', component: AppListing, pathMatch: 'full' },
   { path: 'listing-detail', component: AppListingDetail, pathMatch: 'full' },
+  { path: 'restaurant-sign-up', component: AppResSignUp, pathMatch: 'full' },
+  { path: 'restaurant-forgot-password', component: AppResForgot, pathMatch: 'full' },
+  { path: 'about-restaurant', component: AppResAbout, pathMatch: 'full' },
+  { path: 'restaurant-privacy-policy', component: AppResPrivacyPolicy, pathMatch: 'full' },
+  { path: 'restaurant-terms-and-conditions', component: AppResTermsConditions, pathMatch: 'full' },
+
 ];
 
 @NgModule({
