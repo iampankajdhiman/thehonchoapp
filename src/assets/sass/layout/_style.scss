@@ -79,6 +79,15 @@ app-settings, app-res-settings{
             color: #555555;
 
         }
+
+        ion-icon{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            font-size: 19px;
+            transform: translateY(-50%);
+            color: #000;
+        }
     }
 }
 
