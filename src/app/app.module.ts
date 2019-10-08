@@ -30,6 +30,9 @@ import { AppResForgot } from './layout/restaurant/signup/forgotPass/forgot-compo
 import { AppResAbout } from './layout/restaurant/about/about-component';
 import { AppResPrivacyPolicy } from './layout/restaurant/privacy-policy/privacy-policy-component';
 import { AppResTermsConditions } from './layout/restaurant/terms-conditions/terms-conditions-component';
+import { AppResHome } from './layout/restaurant/home/home-component';
+import { AppResChangePassword } from './layout/restaurant/change-password/change-password-component';
+import { AppResSettings } from './layout/restaurant/settings/settings-component';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -37,7 +40,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome, AppSignUp, AppForgot, AppHome, AppAbout, AppTermsConditions, AppPrivacyPolicy, AppChangePassword, AppSettings, AppProfile, AppProfileEdit, AppListing, AppListingDetail, AppResSignUp, AppResAbout, AppResForgot, AppResPrivacyPolicy, AppResTermsConditions
+    AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome, AppSignUp, AppForgot, AppHome, AppAbout, AppTermsConditions, AppPrivacyPolicy, AppChangePassword, AppSettings, AppProfile, AppProfileEdit, AppListing, AppListingDetail, AppResSignUp, AppResAbout, AppResForgot, AppResPrivacyPolicy, AppResTermsConditions, AppResHome, AppResChangePassword, AppResSettings
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
