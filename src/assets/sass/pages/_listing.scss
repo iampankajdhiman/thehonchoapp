@@ -1,4 +1,5 @@
-app-listing {
+app-listing,
+app-client-restaurant {
     ion-list-header {
         display: flex;
         align-items: center;
@@ -6,7 +7,6 @@ app-listing {
         border-bottom: solid 1px #dbdbdb;
         padding-bottom: 12px;
         margin-bottom: 12px;
-
         h1 {
             margin: 0;
             font-size: 160%;
@@ -15,7 +15,6 @@ app-listing {
             text-transform: capitalize;
             letter-spacing: normal;
         }
-
         .button,
         ion-button {
             --background: #DBDBDB;
@@ -28,7 +27,6 @@ app-listing {
             font-size: 110%;
         }
     }
-
     ion-content {
         ion-item {
             --padding-start: 0px;
@@ -41,7 +39,6 @@ app-listing {
             padding-bottom: 12px;
             padding-top: 12px;
             min-height: 130px;
-
             .listing-img {
                 display: inline-block;
                 width: 140px;
@@ -53,8 +50,6 @@ app-listing {
                 position: absolute;
                 top: 0;
                 left: -150px;
-
-
                 figcaption {
                     position: absolute;
                     bottom: 0;
@@ -67,29 +62,28 @@ app-listing {
                     padding: 5px;
                 }
             }
-
             ion-label {
+                text-overflow: none;
+                white-space: normal;
+                overflow: visible;
                 h3 {
                     color: #555555;
                     font-size: 95% !important;
                     font-family: $sans-serif-s;
                     margin-bottom: 5px;
                 }
-
                 cite {
                     font-style: normal;
                     font-size: 80%;
                     color: #777;
                     display: block;
                     margin-bottom: 2px;
-
                     figure {
                         width: 12px;
                         height: 16px;
                         display: inline-block;
                         margin: 0;
                         vertical-align: -3px;
-
                         svg {
                             display: block;
                             width: 100%;
@@ -97,13 +91,11 @@ app-listing {
                         }
                     }
                 }
-
                 p {
                     color: #555 !important;
                     font-size: 73% !important;
                     margin-bottom: 5px;
                 }
-
                 .highlight {
                     padding: 4px 8px;
                     border-radius: 4px;
@@ -112,7 +104,6 @@ app-listing {
                     font-size: 72%;
                     margin-bottom: 5px;
                 }
-
                 ion-text {
                     ul {
                         margin: 2px 0 0;
@@ -121,26 +112,22 @@ app-listing {
                         align-items: center;
                         justify-content: space-between;
                         border-top: solid 1px #dbdbdb;
-
                         li {
                             display: inline-block;
                             width: 46%;
                             font-size: 65%;
-
                             figure {
                                 display: inline-block;
                                 vertical-align: 0px;
                                 width: 15px;
                                 height: 15px;
                                 margin: 0;
-
                                 svg {
                                     display: block;
                                     width: 100%;
                                     height: 100%;
                                 }
                             }
-
                             &:last-child {
                                 text-align: right;
                             }
@@ -150,42 +137,35 @@ app-listing {
             }
         }
     }
-
 }
 
 app-listing-detail {
     ion-content {
         ion-list {
             margin: 0 -16px !important;
-
             ion-list-header {
                 display: block;
                 padding: 0 16px;
-
                 ion-img {
                     display: block;
                     border-radius: 12px;
                     overflow: hidden;
                 }
-
                 ion-label {
                     padding-top: 10px;
                     display: flex;
                     width: 100%;
                     align-items: center;
                     justify-content: space-between;
-
                     h6 {
                         font-size: 110%;
                         color: #777;
                         font-family: $sans-serif;
                         font-weight: normal;
-
                         small {
                             display: block;
                         }
                     }
-
                     cite {
                         display: inline-block;
                         width: auto;
@@ -198,13 +178,11 @@ app-listing-detail {
                     }
                 }
             }
-
             .text-center {
                 text-align: center;
                 position: relative;
                 z-index: 99;
             }
-
             .deals-heading {
                 font-family: $sans-serif;
                 font-size: 100%;
@@ -215,14 +193,12 @@ app-listing-detail {
                 border-radius: 4px;
                 padding: 2px 8px;
             }
-
             ion-item {
                 --padding-start: 0;
                 --inner-padding-end: 0;
                 --inner-border-width: 0 0 0px 0;
                 --background: #F2F2F2;
                 background: #F2F2F2;
-
                 ion-label {
                     padding: 10px 16px 16px;
                     border: none;
@@ -232,14 +208,12 @@ app-listing-detail {
                     align-content: space-between;
                     display: flex !important;
                 }
-
                 h2,
                 p,
                 .detail-footer {
                     display: block;
                     width: 100%;
                 }
-
                 h2 {
                     font-size: 102% !important;
                     font-family: $sans-serif-s;
@@ -249,17 +223,14 @@ app-listing-detail {
                     justify-content: space-between;
                     margin: 0px 0 10px !important;
                     white-space: normal;
-
                     small {
                         padding-left: 15px;
                         font-size: 100%;
                     }
                 }
-
                 p {
                     padding-right: 100px;
                 }
-
                 .timer {
                     position: absolute;
                     top: 46%;
@@ -272,60 +243,43 @@ app-listing-detail {
                     border-radius: 4px;
                     font-size: 82%;
                 }
-
                 .detail-footer {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     margin-top: 10px;
-
                     a {
                         font-size: 100%;
                         color: #344900;
                         text-decoration: underline;
                     }
-
                     .button,
                     ion-button {
                         width: 125px;
                     }
                 }
-
-
             }
-
             ion-item:first-of-type {
                 margin-top: -14px;
-
                 ion-label {
                     padding-top: 20px;
                 }
             }
-
             ion-item:nth-child(even) {
                 background: #fff;
                 --background: #fff;
             }
-
-
-
-
-
-
         }
-
         ion-text {
             &.links-cloud {
                 p {
                     font-size: 100%;
                     color: #0098FF;
                     font-family: $sans-serif-s;
-
                     a {
                         color: #0098FF;
                         font-family: $sans-serif;
                         font-size: 90%;
-
                         &:after {
                             content: "/";
                             display: inline-block;
@@ -335,39 +289,32 @@ app-listing-detail {
                 }
             }
         }
-
         ion-toolbar {
             margin-bottom: 30px;
-
             ion-header {
                 background: #D8D8D8;
                 text-align: center;
                 padding: 7px;
-
                 &::after {
                     display: none;
                 }
             }
-
             ion-text {
                 background: #EFEFEF;
                 display: block;
                 padding: 15px 15px 5px;
-
                 p {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     font-size: 80%;
                     margin-bottom: 10px;
-
                     strong {
                         width: 50%;
                         font-weight: normal;
                         font-family: $sans-serif;
                         text-align: right;
                         padding-right: 5px;
-
                         &:last-child {
                             padding-right: 0px;
                             padding-left: 5px;
@@ -378,7 +325,6 @@ app-listing-detail {
                 }
             }
         }
-
         ion-card.listing-subscribe {
             padding: 0;
             margin: 0;
@@ -387,18 +333,15 @@ app-listing-detail {
             max-height: initial;
             box-shadow: none;
             text-align: center;
-
             &:before {
                 display: none;
             }
-
             ion-card-content {
                 border: dashed 2px #efefef;
                 border-radius: 20px;
                 text-align: center;
                 display: inline-block;
                 margin: 0 auto;
-
                 ion-label {
                     text-align: center;
                     color: #555;
@@ -407,13 +350,11 @@ app-listing-detail {
                     margin-bottom: 15px;
                     display: block;
                 }
-
                 .button,
                 ion-button {
                     --background: #E50000;
                     --color: #fff;
                     color: #fff;
-
                     &.activated {
                         --background: #f54949;
                         --color: #fff;
@@ -421,7 +362,5 @@ app-listing-detail {
                 }
             }
         }
-
-
     }
 }
