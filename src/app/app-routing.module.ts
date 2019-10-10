@@ -21,6 +21,9 @@ import { AppResForgot } from './layout/restaurant/signup/forgotPass/forgot-compo
 import { AppResAbout } from './layout/restaurant/about/about-component';
 import { AppResPrivacyPolicy } from './layout/restaurant/privacy-policy/privacy-policy-component';
 import { AppResTermsConditions } from './layout/restaurant/terms-conditions/terms-conditions-component';
+import { AppResHome } from './layout/restaurant/home/home-component';
+import { AppResChangePassword } from './layout/restaurant/change-password/change-password-component';
+import { AppResSettings } from './layout/restaurant/settings/settings-component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -45,6 +48,9 @@ const routes: Routes = [
   { path: 'about-restaurant', component: AppResAbout, pathMatch: 'full' },
   { path: 'restaurant-privacy-policy', component: AppResPrivacyPolicy, pathMatch: 'full' },
   { path: 'restaurant-terms-and-conditions', component: AppResTermsConditions, pathMatch: 'full' },
+  { path: 'restaurant-home', component: AppResHome, pathMatch: 'full' },
+  { path: 'restaurant-change-password', component: AppResChangePassword, pathMatch: 'full' },
+  { path: 'restaurant-settings', component: AppResSettings, pathMatch: 'full' },
 
 ];
 

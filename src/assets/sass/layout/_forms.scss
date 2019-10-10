@@ -1,7 +1,7 @@
-.change-password-form{
+.change-password-form {
     text-align: center;
 
-    &.pt-5{
+    &.pt-5 {
         --padding-top: 15vh;
     }
 
@@ -25,6 +25,18 @@
                 --padding-start: 0;
                 margin-bottom: 20px;
                 --min-height: 1px;
+
+                &.item-has-focus {
+                    --highlight-background:#75a500;
+                    ion-label {
+                        color: #75a500;
+
+                        &.sc-ion-label-ios-h,
+                        &.sc-ion-label-md-h {
+                            color: #75a500;
+                        }
+                    }
+                }
             }
 
             ion-label {
