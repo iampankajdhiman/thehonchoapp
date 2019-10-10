@@ -10,13 +10,16 @@
     border-bottom-right-radius: 12px;
     min-height: 66px;
     box-shadow: none;
+
     &::after {
         display: none;
     }
+
     &.secondary {
         --background: $color-secondary-th2;
         background: $color-secondary-th2;
     }
+
     ion-toolbar {
         background: transparent;
         --background: transparent;
@@ -30,39 +33,50 @@
         top: 50%;
         transform: translateY(-50%);
         left: 0;
+
         &:first-child {
             left: 0;
             right: auto;
         }
+
         &:last-of-type {
             left: auto;
             right: 0;
         }
+
         ion-back-button,
         .back-button-has-icon-only.sc-ion-back-button-md-h {
-            --border-radius: 0%;
+            --border-radius: 100%;
             min-width: 1px;
-            height: auto;
+            height: 45px;
             line-height: 1;
             --background: transparent;
             --min-height: 1px;
+            padding: 0 !important;
+            width: 45px;
+            max-width: 45px;
+
             button {
                 font-size: 10px;
             }
         }
     }
+
     form {
         width: 70%;
         position: relative;
+
         ion-list {
             margin: 0;
             background: transparent;
+
             ion-item {
                 border-radius: 40px;
                 height: 36px;
                 --min-height: 36px;
                 --background: rgba(30, 45, 0, 0.16);
                 background: rgba(30, 45, 0, 0.16);
+
                 ion-input {
                     height: 36px;
                     --min-height: 36px;
@@ -73,6 +87,7 @@
                 }
             }
         }
+
         .form-btn {
             position: absolute;
             top: 0;
@@ -80,6 +95,7 @@
             bottom: 0;
             width: 36px;
             padding-right: 7px;
+
             .button {
                 --padding: 0;
                 width: 100%;
@@ -93,6 +109,7 @@
             }
         }
     }
+
     h1 {
         text-align: center;
         margin: 0;
@@ -100,11 +117,13 @@
         font-size: 115%;
         color: #000;
     }
+
     .profile-section {
         background: #fff;
         border-radius: 12px;
         padding: 16px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
         .profile-top {
             display: flex;
             align-items: center;
@@ -112,23 +131,27 @@
             border-bottom: solid 1px #E2E2E2;
             padding: 0 0 20px;
             margin-bottom: 20px;
+
             &.no-border {
                 border-bottom: none;
                 justify-content: center;
                 padding-bottom: 0;
             }
+
             ion-toolbar {
                 width: auto;
                 --min-height: 1px;
                 font-size: 25px;
                 color: #616161;
             }
+
             .profile-pic {
                 padding: 0px;
                 border-radius: 0px;
                 border: none;
                 text-align: center;
                 margin: -90px 0 0;
+
                 figure {
                     display: block;
                     width: 185px;
@@ -149,22 +172,27 @@
                     margin-block-start: 0;
                     margin-block-end: 15px;
                 }
+
                 ion-label {
                     display: block;
                     font-family: $sans-serif-s;
                     font-size: 110%;
                     color: #000;
                 }
+
                 a {
                     font-size: 100%;
                     color: #555555;
                 }
+
                 form {
                     width: 100%;
                     margin-top: -44px;
+
                     ion-list {
                         padding-bottom: 10px;
                     }
+
                     ion-input {
                         opacity: 0;
                         position: absolute;
@@ -175,6 +203,7 @@
                         right: 0;
                         margin: auto;
                     }
+
                     ion-label {
                         width: 48px;
                         height: 48px;
@@ -192,9 +221,11 @@
                 }
             }
         }
+
         ion-list {
             margin: 0;
         }
+
         ion-item {
             --padding-start: 0;
             padding: 10px;
@@ -205,11 +236,13 @@
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
             border-left: solid 2px $color-secondary-th2;
+
             ion-label {
                 font-family: $sans-serif-s;
                 font-size: 110%;
                 color: #555555;
             }
+
             &::last-child {
                 margin-bottom: 0;
             }
