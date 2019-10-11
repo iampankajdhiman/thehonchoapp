@@ -1,0 +1,30 @@
+.add-restaurant-form form {
+  padding: 0;
+  border: none;
+  background: transparent; }
+  .add-restaurant-form form ion-list ion-item {
+    --inner-border-width: 0px 0px 0px 0px; }
+    .add-restaurant-form form ion-list ion-item ion-label {
+      color: #777; }
+      .add-restaurant-form form ion-list ion-item ion-label.sc-ion-label-ios-h, .add-restaurant-form form ion-list ion-item ion-label.sc-ion-label-md-h {
+        color: #777; }
+    .add-restaurant-form form ion-list ion-item ion-input.sc-ion-input-ios-h,
+    .add-restaurant-form form ion-list ion-item ion-select, .add-restaurant-form form ion-list ion-item ion-textarea {
+      background: #F4F4F4;
+      padding: 2px 15px !important;
+      font-size: 16px;
+      min-height: 49px;
+      border-radius: 6px; }
+    .add-restaurant-form form ion-list ion-item ion-select {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .add-restaurant-form form ion-list ion-item ion-textarea {
+      min-height: 210px; }
+      .add-restaurant-form form ion-list ion-item ion-textarea textarea {
+        height: 100%; }
+    .add-restaurant-form form ion-list ion-item ion-input.sc-ion-input-ios-h + ion-input.sc-ion-input-ios-h {
+      margin-top: 15px; }

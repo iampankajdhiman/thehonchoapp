@@ -1,0 +1,72 @@
+<ion-header class="header-login secondary" mode="ios">
+    <ion-toolbar>
+        <ion-icon name="ios-arrow-back"></ion-icon>
+    </ion-toolbar>
+
+    <h1>Add Restaurant</h1>
+</ion-header>
+
+<ion-content class="add-restaurant-form">
+    <form mode="ios">
+        <ion-list mode="ios">
+            <ion-item>
+                <ion-select placeholder="Select Category" mode="ios">
+                    <ion-select-option value="1">Category 1</ion-select-option>
+                    <ion-select-option value="2">Category 2</ion-select-option>
+                    <ion-select-option value="3">Category 3</ion-select-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-badge>Drinks <ion-icon ios="ios-close" md="md-close"></ion-icon>
+                </ion-badge>
+                <ion-badge>Food <ion-icon ios="ios-close" md="md-close"></ion-icon>
+                </ion-badge>
+            </ion-item>
+            <ion-list class="AddfileCover">
+                <ion-input type="file" accept="image/*" capture="camera" id="AddfileInput"></ion-input>
+                <ion-label for="AddfileInput" icon-only ion-button>
+                    <ion-icon ios="ios-add" md="md-add"></ion-icon>
+                    <ion-text>Add images</ion-text>
+                </ion-label>
+            </ion-list>
+            <ion-item>
+                <ion-label position="stacked" color="primary">
+                    Restaurant Name:
+                </ion-label>
+                <ion-input name="RestaurantName" type="text" required value="White Horse Bar and Grill">
+                </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="stacked" color="primary">
+                    Address:
+                </ion-label>
+                <ion-input name="Address" type="text" required value="321 Main Street Boise, Texas">
+                </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="stacked" color="primary">
+                    Add Link (optional):
+                    <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
+                </ion-label>
+                <ion-input name="AddLink" type="text" required value="Drinks">
+                </ion-input>
+                <ion-input name="AddLink" type="text" required value="https://www.blindtextgenerator.com/lorem-ipsum">
+                </ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label position="stacked" color="primary">
+                    About:
+                </ion-label>
+                <ion-textarea name="About" type="text" required
+                    value="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'.">
+                </ion-textarea>
+            </ion-item>
+
+        </ion-list>
+    </form>
+
+
+</ion-content>

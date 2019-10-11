@@ -1,0 +1,77 @@
+<ion-header class="header-login secondary" mode="ios">
+    <ion-toolbar>
+        <ion-icon name="ios-arrow-back"></ion-icon>
+    </ion-toolbar>
+
+    <h1>Add Deal</h1>
+</ion-header>
+
+<ion-content class="add-restaurant-form">
+    <form mode="ios">
+        <ion-list mode="ios">
+
+            <ion-item mode="ios">
+                <ion-label position="stacked" color="primary">
+                    Deal:
+                </ion-label>
+                <ion-input mode="ios" name="RestaurantName" type="text" required value="2 Beer Mugs(500Ml) + 1 Veg/Non-Veg...">
+                </ion-input>
+            </ion-item>
+
+            <ion-item mode="ios">
+                <ion-label position="stacked" color="primary">
+                    Price:
+                </ion-label>
+                <ion-input mode="ios" name="Address" type="text" required value="$15.50">
+                </ion-input>
+            </ion-item>
+
+            <ion-item mode="ios">
+                <ion-label position="stacked" color="primary">
+                    Valid From:
+                </ion-label>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-6>
+                            <ion-datetime mode="ios" displayFormat="MM/DD/YYYY" min="1994-03-14" max="2021-12-09" value="14 May, 2019"></ion-datetime>
+                        </ion-col>
+                        <ion-col col-6>
+                            <ion-datetime mode="ios" displayFormat="h:mm A" minuteValues="0,15,30,45" value="09:00Z"></ion-datetime>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-item>
+
+            <ion-item mode="ios">
+                <ion-label position="stacked" color="primary">
+                    Valid Till:
+                </ion-label>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col col-6>
+                            <ion-datetime mode="ios" displayFormat="MM/DD/YYYY" min="1994-03-14" max="2021-12-09" value="16 May, 2019"></ion-datetime>
+                        </ion-col>
+                        <ion-col col-6>
+                            <ion-datetime mode="ios" displayFormat="h:mm A" minuteValues="0,15,30,45" value="10:00Z"></ion-datetime>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-item>
+
+
+        </ion-list>
+
+        <ion-row class="form-btn">
+            <ion-col>
+                <ion-button color="secondary" type="submit" expand="block" mode="ios">ADD</ion-button>
+            </ion-col>
+
+        </ion-row>
+    </form>
+
+    <div class="text-center have-acc">
+        <p>Close</p>
+    </div>
+
+
+</ion-content>

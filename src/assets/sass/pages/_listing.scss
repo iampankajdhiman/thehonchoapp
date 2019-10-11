@@ -1,4 +1,5 @@
-app-listing {
+app-listing,
+app-client-restaurant {
     ion-list-header {
         display: flex;
         align-items: center;
@@ -54,7 +55,6 @@ app-listing {
                 top: 0;
                 left: -150px;
 
-
                 figcaption {
                     position: absolute;
                     bottom: 0;
@@ -68,10 +68,16 @@ app-listing {
                 }
             }
 
-            ion-label {
+            ion-label,
+            .item.sc-ion-label-md-h,
+            .item .sc-ion-label-md-h {
+                text-overflow: none !important;
+                white-space: normal !important;
+                overflow: visible !important;
+
                 h3 {
                     color: #555555;
-                    font-size: 95% !important;
+                    font-size: 90% !important;
                     font-family: $sans-serif-s;
                     margin-bottom: 5px;
                 }
@@ -82,6 +88,10 @@ app-listing {
                     color: #777;
                     display: block;
                     margin-bottom: 2px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    width: 50vw;
+                    overflow: hidden;
 
                     figure {
                         width: 12px;
@@ -124,7 +134,7 @@ app-listing {
 
                         li {
                             display: inline-block;
-                            width: 46%;
+                            width: 100%;
                             font-size: 65%;
 
                             figure {
@@ -141,19 +151,19 @@ app-listing {
                                 }
                             }
 
-                            &:last-child {
-                                text-align: right;
-                            }
+                            // &:last-child {
+                            //     text-align: right;
+                            // }
                         }
                     }
                 }
             }
         }
     }
-
 }
 
-app-listing-detail {
+app-listing-detail,
+app-client-restaurant-details {
     ion-content {
         ion-list {
             margin: 0 -16px !important;
@@ -190,11 +200,14 @@ app-listing-detail {
                         display: inline-block;
                         width: auto;
                         font-style: normal;
-                        font-size: 95%;
+                        font-size: 75%;
                         color: #fff;
                         background: #C40202;
                         border-radius: 4px;
                         padding: 3px 8px;
+                        min-width: 93px;
+                        text-align: center;
+                        margin-left: 10px;
                     }
                 }
             }
@@ -290,8 +303,6 @@ app-listing-detail {
                         width: 125px;
                     }
                 }
-
-
             }
 
             ion-item:first-of-type {
@@ -306,12 +317,6 @@ app-listing-detail {
                 background: #fff;
                 --background: #fff;
             }
-
-
-
-
-
-
         }
 
         ion-text {
@@ -421,7 +426,5 @@ app-listing-detail {
                 }
             }
         }
-
-
     }
 }

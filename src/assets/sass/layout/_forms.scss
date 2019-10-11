@@ -1,4 +1,5 @@
-.change-password-form {
+.change-password-form,
+.add-restaurant-form {
     text-align: center;
 
     &.pt-5 {
@@ -25,9 +26,11 @@
                 --padding-start: 0;
                 margin-bottom: 20px;
                 --min-height: 1px;
+                --inner-padding-end: 0;
 
                 &.item-has-focus {
-                    --highlight-background:#75a500;
+                    --highlight-background: #75a500;
+
                     ion-label {
                         color: #75a500;
 
@@ -58,7 +61,8 @@
                 }
             }
 
-            ion-input.sc-ion-input-ios-h {
+            ion-input.sc-ion-input-ios-h,
+            ion-select {
                 --padding-top: 0;
                 --padding-left: 0;
                 --padding-bottom: 0;
@@ -67,6 +71,13 @@
 
             ion-item:last-of-type {
                 margin-bottom: 0;
+            }
+
+            ion-select {
+                display: flex;
+                width: 100%;
+                max-width: 100%;
+                padding-right: 5px;
             }
 
         }

@@ -24,6 +24,9 @@ import { AppResTermsConditions } from './layout/restaurant/terms-conditions/term
 import { AppResHome } from './layout/restaurant/home/home-component';
 import { AppResChangePassword } from './layout/restaurant/change-password/change-password-component';
 import { AppResSettings } from './layout/restaurant/settings/settings-component';
+import { AppAddRestaurant } from './layout/restaurant/add-restaurant/add-restaurant-component';
+import { AppAddDeal } from './layout/restaurant/add-deal/add-deal-component';
+import { AppOpenHours } from './layout/restaurant/add-open-hours/add-open-hours-component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -51,6 +54,9 @@ const routes: Routes = [
   { path: 'restaurant-home', component: AppResHome, pathMatch: 'full' },
   { path: 'restaurant-change-password', component: AppResChangePassword, pathMatch: 'full' },
   { path: 'restaurant-settings', component: AppResSettings, pathMatch: 'full' },
+  { path: 'add-restaurant', component: AppAddRestaurant, pathMatch: 'full' },
+  { path: 'add-deal', component: AppAddDeal, pathMatch: 'full' },
+  { path: 'add-open-hours', component: AppOpenHours, pathMatch: 'full' },
 
 ];
 

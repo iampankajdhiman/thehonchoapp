@@ -1,0 +1,140 @@
+.add-restaurant-form {
+    form {
+        padding: 0;
+        border: none;
+        background: transparent;
+
+        ion-list {
+            ion-item {
+                --inner-border-width: 0px 0px 0px 0px;
+
+                ion-label {
+                    color: #777;
+
+                    &.sc-ion-label-ios-h,
+                    &.sc-ion-label-md-h {
+                        color: #777;
+                    }
+
+                    ion-icon {
+                        position: absolute;
+                        top: 2px;
+                        right: 0;
+                    }
+                }
+
+                ion-input.sc-ion-input-ios-h,
+                ion-select,
+                ion-textarea,
+                ion-datetime {
+                    background: #F4F4F4;
+                    padding: 2px 15px !important;
+                    font-size: 16px;
+                    min-height: 49px;
+                    border-radius: 6px;
+                }
+
+                ion-datetime {
+                    max-height: 49px;
+                    line-height: 2.7;
+                }
+
+                ion-select {
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                ion-textarea {
+                    min-height: 210px;
+
+                    textarea {
+                        height: 100%;
+                    }
+                }
+
+                ion-input.sc-ion-input-ios-h+ion-input.sc-ion-input-ios-h {
+                    margin-top: 15px;
+                }
+
+                ion-badge {
+                    display: inline-block;
+                    padding: 6px 30px 8px 15px;
+                    font-size: 85%;
+                    border-radius: 50px;
+                    margin-right: 8px;
+                    background: #f4f4f4;
+                    color: #000;
+                    font-weight: normal;
+
+                    ion-icon {
+                        position: absolute;
+                        right: 7px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: #fff;
+                        border-radius: 100%;
+                        border: solid 1px #a4a4a4;
+                    }
+                }
+
+                ion-grid {
+                    width: 100%;
+                    ion-row {
+                        ion-col {
+                            padding-right: 8px;
+
+                            &:last-child {
+                                padding-right: 0;
+                                padding-left: 8px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            &.AddfileCover {
+                position: relative;
+
+                ion-input[type="file"] {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    z-index: 2;
+                }
+
+                ion-label {
+                    background: #F4F4F4;
+                    width: 100%;
+                    height: 120px;
+                    border: dashed 1px #a4a4a4;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    ion-icon {
+                        background: #fff;
+                        border-radius: 100%;
+                        border: solid 1px #a4a4a4;
+                        font-size: 26px;
+                        margin-bottom: 10px;
+                    }
+
+                    ion-text {
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        ion-button{
+            width: 50%;
+        }
+
+    }
+}
