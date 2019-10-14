@@ -163,7 +163,8 @@ app-client-restaurant {
 }
 
 app-listing-detail,
-app-client-restaurant-details {
+app-client-restaurant-details,
+app-res-listing-detail {
     ion-content {
         ion-list {
             margin: 0 -16px !important;
@@ -301,6 +302,28 @@ app-client-restaurant-details {
                     .button,
                     ion-button {
                         width: 125px;
+                    }
+
+                    ion-text {
+                        font-size: 80%;
+                        color: #555;
+
+                        strong {
+                            font-weight: normal;
+                            font-family: 'ProximaNova-Semibold';
+                        }
+                    }
+
+                    &.gray {
+
+                        .button,
+                        ion-button {
+                            width: auto;
+                            background: #555;
+                            color: #fff;
+                            border-radius: 6px;
+                            font-size: 70%;
+                        }
                     }
                 }
             }

@@ -27,6 +27,9 @@ import { AppResSettings } from './layout/restaurant/settings/settings-component'
 import { AppAddRestaurant } from './layout/restaurant/add-restaurant/add-restaurant-component';
 import { AppAddDeal } from './layout/restaurant/add-deal/add-deal-component';
 import { AppOpenHours } from './layout/restaurant/add-open-hours/add-open-hours-component';
+import { AppNotification } from './layout/restaurant/notification/notification-component';
+import { AppPaymentHistory } from './layout/restaurant/payment-history/payment-history-component';
+import { AppResListingDetail } from './layout/restaurant/listing-details/listing-detail-component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -57,6 +60,9 @@ const routes: Routes = [
   { path: 'add-restaurant', component: AppAddRestaurant, pathMatch: 'full' },
   { path: 'add-deal', component: AppAddDeal, pathMatch: 'full' },
   { path: 'add-open-hours', component: AppOpenHours, pathMatch: 'full' },
+  { path: 'notification', component: AppNotification, pathMatch: 'full' },
+  { path: 'payment-history', component: AppPaymentHistory, pathMatch: 'full' },
+  { path: 'restaurant-listing-detail', component: AppResListingDetail, pathMatch: 'full' },
 
 ];
 

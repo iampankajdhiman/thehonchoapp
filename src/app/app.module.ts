@@ -36,12 +36,15 @@ import { AppResSettings } from './layout/restaurant/settings/settings-component'
 import { AppAddRestaurant } from './layout/restaurant/add-restaurant/add-restaurant-component';
 import { AppAddDeal } from './layout/restaurant/add-deal/add-deal-component';
 import { AppOpenHours } from './layout/restaurant/add-open-hours/add-open-hours-component';
+import { AppNotification } from './layout/restaurant/notification/notification-component';
+import { AppPaymentHistory } from './layout/restaurant/payment-history/payment-history-component';
+import { AppResListingDetail } from './layout/restaurant/listing-details/listing-detail-component';
 import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
   declarations: [
-    AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome, AppSignUp, AppForgot, AppHome, AppAbout, AppTermsConditions, AppPrivacyPolicy, AppChangePassword, AppSettings, AppProfile, AppProfileEdit, AppListing, AppListingDetail, AppResSignUp, AppResAbout, AppResForgot, AppResPrivacyPolicy, AppResTermsConditions, AppResHome, AppResChangePassword, AppResSettings, AppAddRestaurant, AppAddDeal, AppOpenHours
+    AppComponent, AppLayoutComponent, AppHeaderComponent, AppFooterComponent, AppSplash, AppWelcome, AppSignUp, AppForgot, AppHome, AppAbout, AppTermsConditions, AppPrivacyPolicy, AppChangePassword, AppSettings, AppProfile, AppProfileEdit, AppListing, AppListingDetail, AppResSignUp, AppResAbout, AppResForgot, AppResPrivacyPolicy, AppResTermsConditions, AppResHome, AppResChangePassword, AppResSettings, AppAddRestaurant, AppAddDeal, AppOpenHours, AppNotification, AppPaymentHistory, AppResListingDetail
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
