@@ -1,0 +1,35 @@
+.subscription-section{
+    figure{
+        display: block;
+        width: 263px;
+        height: auto;
+        margin: 20px auto 50px;
+    }
+    .tick-list{
+        margin: 0;
+        padding: 0;
+        max-width: 80%;
+        margin: 0 auto 20px;
+        li{
+            display: inline-block;
+            width: 100%;
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 10px;
+
+            &:before{
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 0;
+                background: url('../images/tick-icon.png') no-repeat;
+                width:22px;
+                height:22px;
+                background-size: 100%;
+            }
+        }
+    }
+    ion-button{
+        margin: 0 auto 10px;
+    }
+}

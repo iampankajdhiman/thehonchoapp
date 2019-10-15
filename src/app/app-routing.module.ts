@@ -30,6 +30,7 @@ import { AppOpenHours } from './layout/restaurant/add-open-hours/add-open-hours-
 import { AppNotification } from './layout/restaurant/notification/notification-component';
 import { AppPaymentHistory } from './layout/restaurant/payment-history/payment-history-component';
 import { AppResListingDetail } from './layout/restaurant/listing-details/listing-detail-component';
+import { AppSubscription } from './layout/restaurant/subscription/subscription-component';
 
 const routes: Routes = [
   // { path: '', redirectTo: 'splash', pathMatch: 'full' },
@@ -63,6 +64,7 @@ const routes: Routes = [
   { path: 'notification', component: AppNotification, pathMatch: 'full' },
   { path: 'payment-history', component: AppPaymentHistory, pathMatch: 'full' },
   { path: 'restaurant-listing-detail', component: AppResListingDetail, pathMatch: 'full' },
+  { path: 'subscription', component: AppSubscription, pathMatch: 'full' },
 
 ];
 
