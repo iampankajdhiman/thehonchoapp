@@ -209,6 +209,7 @@ app-res-listing-detail {
                         min-width: 93px;
                         text-align: center;
                         margin-left: 10px;
+                        white-space: nowrap;
                     }
                 }
             }
@@ -230,7 +231,8 @@ app-res-listing-detail {
                 padding: 2px 8px;
             }
 
-            ion-item {
+            ion-item,
+            ion-item-sliding {
                 --padding-start: 0;
                 --inner-padding-end: 0;
                 --inner-border-width: 0 0 0px 0;
@@ -323,12 +325,19 @@ app-res-listing-detail {
                             color: #fff;
                             border-radius: 6px;
                             font-size: 70%;
+                            --background: #555;
+                            --border-radius: 6px;
+                            font-weight: normal;
+                            font-family: $sans-serif;
                         }
                     }
                 }
+
+
             }
 
-            ion-item:first-of-type {
+            ion-item:first-of-type,
+            ion-item-sliding:first-of-type {
                 margin-top: -14px;
 
                 ion-label {
@@ -339,6 +348,44 @@ app-res-listing-detail {
             ion-item:nth-child(even) {
                 background: #fff;
                 --background: #fff;
+            }
+
+            ion-item-sliding {
+                ion-item-options {
+                    ion-item-option {
+                        padding: 0 5px;
+                        font-size: 24px;
+                    }
+                }
+
+                ion-item {
+                    margin-top: 0 !important;
+                    background: #F2F2F2 !important;
+                    --background: #F2F2F2 !important;
+                }
+
+                &:nth-child(even) {
+                    ion-item {
+                        background: #fff !important;
+                        --background: #fff !important;
+                    }
+                }
+            }
+        }
+
+        .fixed-bottom-btn {
+            padding-top: 40px;
+
+            ion-button {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                max-width: 100%;
+                border-radius: 0px;
+                --border-radius: 0px;
+                z-index: 9999;
             }
         }
 
