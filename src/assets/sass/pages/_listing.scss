@@ -1,5 +1,6 @@
 app-listing,
-app-client-restaurant {
+app-client-restauran,
+app-home {
     ion-list-header {
         display: flex;
         align-items: center;
@@ -30,7 +31,8 @@ app-client-restaurant {
         }
     }
 
-    ion-content {
+    ion-content,
+    .listing-cover {
         ion-item {
             --padding-start: 0px;
             --inner-padding-end: 0px;
@@ -41,7 +43,7 @@ app-client-restaurant {
             border-bottom: solid 1px #dbdbdb;
             padding-bottom: 12px;
             padding-top: 12px;
-            min-height: 130px;
+            min-height: 160px;
 
             .listing-img {
                 display: inline-block;
@@ -428,6 +430,27 @@ app-res-listing-detail {
                 background: #EFEFEF;
                 display: block;
                 padding: 15px 15px 5px;
+
+                .button,
+                ion-button {
+                    background: transparent;
+                    --background: transparent;
+                    display: flex !important;
+                    flex-direction: column;
+                    box-shadow: none;
+                    --box-shadow: none;
+                    padding: 18px;
+                    height: auto;
+                    font-size: 12px;
+                    color: #555555;
+                    letter-spacing: normal;
+
+                    ion-icon {
+                        margin-right: 5px;
+                        vertical-align: -2px;
+                        display: inline-block;
+                    }
+                }
 
                 p {
                     display: flex;

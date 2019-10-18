@@ -8,6 +8,11 @@
             ion-item {
                 --inner-border-width: 0px 0px 0px 0px;
 
+                 &.no-border{
+                     border-width:0px;
+                     --border-width:0px;
+                 }
+
                 ion-label {
                     color: #777;
 

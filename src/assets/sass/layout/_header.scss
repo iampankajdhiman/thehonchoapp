@@ -116,6 +116,10 @@
         font-family: $sans-serif-s;
         font-size: 115%;
         color: #000;
+        width: calc(100% - 108px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .profile-section {
@@ -173,12 +177,12 @@
                     margin-block-end: 15px;
                 }
 
-                ion-label {
-                    display: block;
-                    font-family: $sans-serif-s;
-                    font-size: 110%;
-                    color: #000;
-                }
+                // ion-label {
+                //     display: block;
+                //     font-family: $sans-serif-s;
+                //     font-size: 110%;
+                //     color: #000;
+                // }
 
                 a {
                     font-size: 100%;
@@ -188,37 +192,39 @@
                 form {
                     width: 100%;
                     margin-top: -44px;
-
-                    ion-list {
-                        padding-bottom: 10px;
-                    }
-
-                    ion-input {
-                        opacity: 0;
-                        position: absolute;
-                        z-index: 2;
-                        width: 48px;
-                        height: 48px;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                    }
-
-                    ion-label {
-                        width: 48px;
-                        height: 48px;
-                        margin: 0 auto;
-                        border: none;
-                        border-radius: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background: #fff;
-                        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
-                        color: #d9d8dc;
-                        font-size: 30px;
-                    }
                 }
+
+                ion-list {
+                    padding: 10px 0;
+                    margin-top: -50px;
+                }
+
+                ion-input {
+                    opacity: 0;
+                    position: absolute;
+                    z-index: 2;
+                    width: 48px;
+                    height: 48px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+
+                // ion-label {
+                //     width: 48px;
+                //     height: 48px;
+                //     margin: 0 auto;
+                //     border: none;
+                //     border-radius: 100%;
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: center;
+                //     background: #fff;
+                //     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+                //     color: #d9d8dc;
+                //     font-size: 30px;
+                // }
+
             }
         }
 
@@ -247,5 +253,31 @@
                 margin-bottom: 0;
             }
         }
+    }
+}
+
+app-my-profile {
+    .header-login .profile-section .profile-top .profile-pic ion-label {
+        display: block;
+        font-family: $sans-serif-s;
+        font-size: 110%;
+        color: #000;
+    }
+}
+
+app-profile-edit {
+    .header-login .profile-section .profile-top .profile-pic ion-label {
+        width: 48px;
+        height: 48px;
+        margin: 0 auto;
+        border: none;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.35);
+        color: #d9d8dc;
+        font-size: 30px;
     }
 }

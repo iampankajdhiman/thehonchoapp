@@ -186,6 +186,10 @@ app-res-settings {
 app-profile,
 app-profile-edit,
 app-my-profile {
+
+    .header-login form{
+        width: 100%;
+    }
     .header-login ion-toolbar {
         top: 20px;
         transform: translateY(0%);

@@ -56,12 +56,24 @@ h1 {
     @include breakpoint(desktop){
         font-size: em(38);
     }
+    @include breakpoint(normal){
+        font-size: em(32);
+    }
+    @include breakpoint(mobile){
+        font-size: em(28);
+    }
 }
 
 h2 {
     font-size: em(40);
     @include breakpoint(desktop){
         font-size: em(36);
+    }
+    @include breakpoint(normal){
+        font-size: em(28);
+    }
+    @include breakpoint(mobile){
+        font-size: em(26);
     }
 }
 
@@ -70,12 +82,24 @@ h3 {
     @include breakpoint(desktop){
         font-size: em(28);
     }
+    @include breakpoint(normal){
+        font-size: em(26);
+    }
+    @include breakpoint(mobile){
+        font-size: em(24);
+    }
 }
 
 h4 {
     font-size: em(28);
     @include breakpoint(desktop){
         font-size: em(26);
+    }
+    @include breakpoint(normal){
+        font-size: em(24);
+    }
+    @include breakpoint(mobile){
+        font-size: em(22);
     }
 }
 
@@ -84,12 +108,21 @@ h5 {
     @include breakpoint(desktop){
         font-size: em(18);
     }
+    @include breakpoint(normal){
+        font-size: em(16);
+    }
+    @include breakpoint(mobile){
+        font-size: em(14);
+    }
 }
 
 h6 {
     font-size: em(18);
     @include breakpoint(desktop){
         font-size: em(16);
+    }
+    @include breakpoint(mobile){
+        font-size: em(14);
     }
 }
 
@@ -99,6 +132,10 @@ p{
     line-height: 1.7;
     margin-bottom: 15px;
     color: $color-text;
+
+    @include breakpoint(mobile){
+        font-size: em(14);
+    }
 
 
     strong {
