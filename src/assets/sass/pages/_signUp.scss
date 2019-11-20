@@ -178,3 +178,20 @@
         }
     }
 }
+
+
+app-login {
+    .auth-tabs-header {
+        padding: 0;
+        ion-toolbar{
+            --background: transparent;
+            padding: 10px 30px 30px;
+        }
+        ion-back-button.back-button-has-icon-only.sc-ion-back-button-md-h {
+            --border-radius: 50%;
+            min-width: 40px;
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
